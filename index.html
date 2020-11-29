@@ -7,6 +7,10 @@ canvas {
     border:1px solid #d3d3d3;
     background-color: #f1f1f1;
 }
+.content {
+  max-width: 500px;
+  margin: auto;
+}
 </style>
 </head>
 <body onload="startGame()">
@@ -28,8 +32,6 @@ var myGameArea = {
     start : function() {
         this.canvas.width = 480;
         this.canvas.height = 270;
-        this.canvas.padding = 0;
-        this.canvas.marign = auto;
         this.context = this.canvas.getContext("2d");
         document.body.insertBefore(this.canvas, document.body.childNodes[0]);
         this.frameNo = 0;
